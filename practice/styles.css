@@ -1,0 +1,279 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f2f2f2;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.main-content {
+    box-sizing: border-box;
+    height: calc(90vh - 40px - 20px - 20px); /* viewport height - header height - footer height - margin - padding */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+/* login page */
+
+.login-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.login-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.remember-me {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+}
+
+/* register page */
+
+.register-container {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h1 {
+    color: #333;
+    text-align: center;
+}
+
+.register-container p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.register-container label {
+    margin-bottom: 5px;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.gender, .skills {
+    margin-bottom: 15px;
+}
+
+.gender label, .skills label {
+    margin-right: 10px;
+}
+
+.gender input[type="radio"], .skills input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.register-container button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.register-container button:hover {
+    background-color: #0056b3;
+}
+
+/* gallary list */
+
+.gallery-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.gallery-table th,
+.gallery-table td {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.gallery-table thead {
+    background-color: #ddd;
+}
+
+.gallery-table th {
+    font-weight: bold;
+}
+
+.gallery-table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.gallery-table th,
+.gallery-table td {
+    border-left: none;
+    border-right: none;
+}
+
+.gallery-table .left-aligned {
+    text-align: left;
+}
+
+.gallery-table thead th {
+    border-bottom: 2px solid #000;
+}
+
+.gallery-table tbody td {
+    border-top: none;
+}
+
+
+/* gallary edit */
+
+.gallery-edit-container {
+    width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-edit-container h1 {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.gallery-edit-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-edit-container label {
+    margin-bottom: 10px;
+}
+
+.gallery-edit-container select,
+.gallery-edit-container input[type="text"],
+.gallery-edit-container textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.gallery-edit-container textarea {
+    resize: vertical;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.buttons button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+}
+
+.buttons button[type="button"] {
+    background-color: #ddd;
+    color: #333;
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}
